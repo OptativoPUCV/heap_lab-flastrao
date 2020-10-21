@@ -1,0 +1,28 @@
+Wed Oct 21 19:40:51 UTC 2020: 
+ heap.c | 13 ++++++++++++-
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+heap.c: In function ‘heap_push’:
+heap.c:28:18: error: ‘pc’ undeclared (first use in this function); did you mean ‘pq’?
+     pq->capac = (pc->capac) * 2 + 1;
+                  ^~
+                  pq
+heap.c:28:18: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+Wed Oct 21 19:41:02 UTC 2020: 
+ heap.c | 13 ++++++++++++-
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+heap.c: In function ‘heap_push’:
+heap.c:28:18: error: ‘pc’ undeclared (first use in this function); did you mean ‘pq’?
+     pq->capac = (pc->capac) * 2 + 1;
+                  ^~
+                  pq
+heap.c:28:18: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+Wed Oct 21 19:41:09 UTC 2020: 
+ heap.c | 13 ++++++++++++-
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+ tests:  5|3
+total_score: 25/70
+1e8ec96

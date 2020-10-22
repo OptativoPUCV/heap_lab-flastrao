@@ -42,8 +42,9 @@ void heap_pop(Heap* pq){
 }
 
 Heap* createHeap(){
-  Heap * monticulo = (Heap*) malloc (sizeof(Heap)); //Se le asigna memoria al monticulo
-  monticulo->heapArray = (heapElem*) malloc (10 * sizeof(heapElem)); //Se le asigna memoria al arreglo del monticulo
-  monticulo->capac = 3; //Se inicializa la capacidad en 3
-  return NULL;
+  Heap * heap = (Heap*) malloc (sizeof(Heap)); //Se le asigna memoria al monticulo
+  heap->size = 0; //Se inicializa en 0 ya que aun no tiene anda el arreglo
+  heap->capac = 3; //Se inicializa la capacidad en 3
+  heap->heapArray = (heapElem*) calloc (10, sizeof(heapElem)); //Se le asigna memoria al arreglo del monticulo
+  return heap;
 }

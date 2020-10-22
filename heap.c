@@ -45,6 +45,5 @@ Heap* createHeap(){
   Heap * monticulo = (Heap*) malloc (sizeof(Heap)); //Se le asigna memoria al monticulo
   monticulo->heapArray = (heapElem*) calloc (10, sizeof(heapElem)); //Se le asigna memoria al arreglo del monticulo
   monticulo->capac = 3; //Se inicializa la capacidad en 3
-  monticulo->size = 0;
   return NULL;
 }

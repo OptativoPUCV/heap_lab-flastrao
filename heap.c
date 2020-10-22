@@ -22,7 +22,6 @@ void* heap_top(Heap* pq){
 }
 
 
-
 void heap_push(Heap* pq, void* data, int priority){
   if(pq->size+1 > pq->capac){
     pq->capac = (pq->capac) * 2 + 1;
@@ -40,10 +39,14 @@ void heap_push(Heap* pq, void* data, int priority){
 }
 
 void heap_pop(Heap* pq){
-
+  Heap * heap = (Heap*) malloc (sizeof(Heap));
+  heap->heapArray = (heapElem*) calloc (10, sizeof(heapElem));
+  heap->capac = 3;
 }
 
 Heap* createHeap(){
+  //Heap malloc
 
-   return NULL;
+  //Array calloc
+  return NULL;
 }

@@ -18,7 +18,10 @@ typedef struct Heap{
 
 
 void* heap_top(Heap* pq){
+  if(pq->heapArray[0].data == NULL){
     return NULL;
+  }
+  return pq->heapArray[0].data;
 }
 
 
@@ -46,5 +49,5 @@ Heap* createHeap(){
   heap->size = 0; //Se inicializa en 0 ya que aun no tiene anda el arreglo
   heap->capac = 3; //Se inicializa la capacidad en 3
   heap->heapArray = (heapElem*) calloc (10, sizeof(heapElem)); //Se le asigna memoria al arreglo del monticulo
-  return heap;
+  return heap; //Se retorna el monticulo creado
 }

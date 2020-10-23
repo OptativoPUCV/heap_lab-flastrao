@@ -18,10 +18,10 @@ typedef struct Heap{
 
 
 void* heap_top(Heap* pq){
-  if(pq->size== 0){
+  if(pq->size== 0){ //Si es que el arreglo no tiene nada ingresado retorna NULL
     return NULL;
   }
-  return pq->heapArray[0].data;
+  return pq->heapArray[0].data; //Se retorna el dato maximo (mayor prioridad)
 }
 
 
